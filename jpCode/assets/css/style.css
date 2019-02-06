@@ -1,0 +1,106 @@
+* {box-sizing:border-box;    
+}  
+body {
+    
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia,"Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 125%;
+    width:fit-content;      
+}  
+#djumbotron {
+    background-color: black;
+    color: lightskyblue;
+    text-align: center;
+    font-size: 30px;
+    font-family:serif;
+    /* margin: 0;
+    margin-bottom: 0px;
+    padding: 0px 0;
+    font-size: 0px;
+    border-top-width: 0px;      */
+}  
+div {
+    text-align: center;
+}
+.w3-btn {width:150px;}
+
+
+h1 {
+    color:greenyellow;
+    background-color:black;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: -10px 0;
+    font-size: 28px;
+    font-style:serif;
+}
+h2 {
+    color:lightskyblue;
+    background-color:black;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 45px;
+    font-style:serif;
+}
+
+h3 {
+    color:lightskyblue;
+    background-color:black;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 28px;
+    font-style:serif;
+
+}
+
+/* #dino {
+  position: static;
+  width: 300px;
+  height:200px;
+  margin-top: 20px;
+  border:100px,  solid whitesmoke;
+  background: black;
+  padding-bottom: 200px;
+} */
+
+#trivia {
+  position: relative;
+  margin-top: 0px;
+  text-align: center;
+  
+ 
+        
+}
+a:hover {
+  color: greenyellow;
+}
+
+ img {
+    width:200px;
+    height:200px
+
+} 
+ 
+.header {
+    color:white;
+    font-size:25px;
+    font-family: serif;
+    text-align: center;
+}
+
+.simple {
+    background: black;
+    color: silver;
+    font-size: 55px;
+    text-shadow: 0 3px 0 rgba(255, 255, 255, 0.4);
+    font: bold 80px Sans-Serif;
+  }
+

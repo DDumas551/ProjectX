@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>                    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ProjectX</title>                       
+        <meta name="description" content="ProjecX">
+        <meta name="keywords" content="HTML, CSS, XML, Javascript, practice, learning html, jonathan, patino, bio, school, coding, bootcamp, project, x" content="HTML, CSS, XML, JavaScript, jquery">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="jonathan patino">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <script src="assets/javascript/caminito.js" async defer></script>        
+    </head>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+          height: 100%;
+          /* width: 150%; */
+          text-align: center;
+          /* margin: auto; */
+          /* display: block;
+          margin-left: auto;
+          margin-right: auto; */
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+        
+          height: 100%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          /* margin: 0;
+          padding: 0; */
+        }
+      </style>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+       
+        <!-- <div style="width:100%;height:0;padding-top:0%;padding-bottom:40%;position:relative;"><iframe src="https://giphy.com/embed/3o85xox5JwjqtDi82A" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/dinosaurs-jurassic-world-steven-spielberg-3o85xox5JwjqtDi82A"></a></p> -->
+        <!--<div id="trivia" class="w3-container; w3-animate-fading"><h1><p style="font-size: 47px; font-family: serif; color:lightsteelblue"><button class="w3-button w3-black w3-round-xxlarge"><a href="index.html">TrailMix</a></button></p></h1></div>-->
+        <section style="width:1200px; height:500px; text-align: center;">
+                <div id="map"></div>
+
+        </section>
+
+        <div class="city"></div>
+    <div class="wind"></div>
+    <div class="humidity"></div>
+    <div class="temp"></div>
+    <div class="shortestPath"></div>
+
+    <div class="city1"></div>
+    <div class="wind1"></div>
+    <div class="humidity1"></div>
+    <div class="temp1"></div>
+    <div class="shortestPath1"></div>
+       
+        <!-- <div id="djumbotron" class="jumbotron">
+            <h1></h1>                
+            <section id="sub-wrapper">
+                <div id="trivia-area">
+                    <a><button  style="font-size: 55px"   id="start" class="w3-button w3-black w3-round-xxlarge">PLAYER READY "BEGIN"</button></a>
+                </div>
+                <d id=photo> </d>
+            </section>
+        </div>
+         -->
+
+         <div class="container">
+            <div style="background:white"   class="jumbotron">
+                <h1 style="background:white;color:black;"    class="h1 text-center">Berkeley Forecast</h1>
+                <!-- <br>
+                <h3 class="h3 text-center">Directory of EE Billable Hours</h3> -->
+            </div>
+            <br>
+            <div class="card" style="width: 100%;color:black">
+                <div class="card-header">
+                  THE FOLLOWING IS A FIVE DAY FORCAST
+                </div>
+                <div class="container-fluid">
+                    <table class="table" id="flytTable">
+                        <thead>
+                            <tr>
+                                <th class="name" scope="col">DAY</th>
+                                <th class="address" scope="col">PENDING</th>
+                                <th class="distance" scope="col">PENDING</th>
+                                <th class="rating" scope="col">PENDING</th>
+                                <th class="img" scope="col"></th>
+                                
+                            </tr>
+                            </thead>
+                        <tbody id="forecast">
+                            
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+              <br> 
+
+
+
+            <div class="card" style="width: 100%;color:black">
+                    <div class="card-header">
+                      List of trails
+                    </div>
+                    <div class="container-fluid">
+                        <table class="table" id="flytTable">
+                            <thead>
+                                <tr>
+                                    <th class="name" scope="col">NAME</th>
+                                    <th class="address" scope="col">ADDRESS</th>
+                                    <th class="distance" scope="col">DISTANCE</th>
+                                    <th class="rating" scope="col">RATING</th>
+                                    <th class="img" scope="col"></th>
+                                    
+                                </tr>
+                                </thead>
+                            <tbody id="trailmix">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                  </div>
+                  <br> 
+                  
+                  
+                  <section ><h1 class="simple">Trail Mix</h1></section>
+                
+                
+                  
+      
+
+
+
+         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIbmWFTKZvx7_IcqVW9iSvh5g91vvdIvY&callback=initMap"
+         type="text/javascript"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" async defer></script>       
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    </body>
+</html>
+
