@@ -1,123 +1,208 @@
 <!DOCTYPE html>
-<html class="no-js">
-    <head>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>                    
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>TrailMix</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ProjectX</title>                       
+        <meta name="description" content="ProjecX">
+        <meta name="keywords" content="HTML, CSS, XML, Javascript, practice, learning html, jonathan, patino, bio, school, coding, bootcamp, project, x" content="HTML, CSS, XML, JavaScript, jquery">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="jonathan patino">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="./assets/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <script src="assets/javascript/caminito.js" async defer></script>        
     </head>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+          height: 100%;
+          /* width: 150%; */
+          text-align: center;
+          /* margin: auto; */
+          /* display: block;
+          margin-left: auto;
+          margin-right: auto; */
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+        
+          height: 100%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          /* margin: 0;
+          padding: 0; */
+        }
+      </style>
     <body>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <img src="./assets/Photo/test photo.jpg" class="img-fluid headerSplashImg" alt="Responsive image">
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-8">
-                    <p class="fig1Text">Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah </p>
-                </div>
-                <div class="col-4">
-                    <img src="https://place-hold.it/150x150" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-xs-12">
-                    <img src="./assets/Photo/test photo.jpg" class="img-fluid headerSplashImg" alt="Responsive image">
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-4">
-                    <img src="https://place-hold.it/150x150" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-                </div>
-                <div class="col-8">
-                    <p class="fig1Text">Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah </p>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-xs-12">
-                    <img src="./assets/Photo/test photo.jpg" class="img-fluid headerSplashImg" alt="Responsive image">
-                </div>
-            </div>
-            <br>
-            <form>
-                <div class="form-group">
-                    <label for="zipcode">Your Location</label>
-                    <input type="integer" class="form-control" id="zipcode" aria-describedby="location" placeholder="Enter zipcode">
-                    <small id="location" class="form-text text-muted">Current location or other (if you're on a roadtrip!)</small>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Radius</label>
-                    <input type="radius" class="form-control" id="exampleInputPassword1" placeholder="Enter Radius">
-                    <small id="emailHelp" class="form-text text-muted">This will search a certain disance from your location.</small>
-                    <!-- <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="Miles">
-                        <label class="form-check-label" for="Miles">Miles</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="Kilometers">
-                        <label class="form-check-label" for="Kilometers">Kilometers</label>
-                    </div> -->
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            <br>
-            <!-- Comment input goes hurr -->
-            <br>
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card" style="width: 100%;">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">John Doe</h5>
-                                <p class="card-text text-center">I loved the hike! I never would have known it was down the street from my house if it wasn't for TrailMix!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card" style="width: 100%;">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Jane Doe</h5>
-                                <p class="card-text text-center">We were bored while camping and used TrailMix to find a hike that ended in a waterfall!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <br>
+
                 
-            
-
-
-
-        <!--/container -->
+                <!--[if lt IE 7]>
+                    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+                    <![endif]-->
+                    
+                    <!-- <div style="width:100%;height:0;padding-top:0%;padding-bottom:40%;position:relative;"><iframe src="https://giphy.com/embed/3o85xox5JwjqtDi82A" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/dinosaurs-jurassic-world-steven-spielberg-3o85xox5JwjqtDi82A"></a></p> -->
+                    <!--<div id="trivia" class="w3-container; w3-animate-fading"><h1><p style="font-size: 47px; font-family: serif; color:lightsteelblue"><button class="w3-button w3-black w3-round-xxlarge"><a href="index.html">TrailMix</a></button></p></h1></div>-->
+                    <section style="width:1200px; height:500px; text-align: center;">
+                            <div id="map"></div>
+                        </section>
+                            
+                            <div>
+                                <div style="background:white">
+                                        
+                                        <h1 style="background:white;color:black;"    class="h1 text-center">Directions</h1>
+                                    </div>
+                                    <div class="card" style="width: 100%;color:black">
+                                            <div>
+                                                <table class="table" >
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">DIRECTIONS</th>
+                                                            <th scope="col">DURATION</th>
+                                                            <th scope="col">DISTANCE</th>
+                                                            <!-- <th scope="col">PENDING</th>
+                                                                <th scope="col">PENDING</th> -->
+                                                                
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="direction">
+                                                            
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <br> 
+                                            
+                                    </div>
+                                        <div class="city"></div>
+                                        <div class="wind"></div>
+                                        <div class="humidity"></div>
+                                        <div class="temp"></div>
+                                    <div class="shortestPath"></div>
+                                    
+                                    
+                                    
+                                    
+                                    <div>
+                                        <div style="background:white"   class="jumbotron">
+                                                <div id="forecast-area">
+                                                    <!-- <a><button  style="font-size: 35px"   id="start" class="w3-button w3-black w3-round-xxlarge">FIVE DAY FORCAST WITH THREE HOUR INTERVALS</button></a> -->
+                                                </div>
+                                                <div class="card" style="width: 100%;color:black">
+                                                        <div Style="background: black"   class="card-header">
+                                                            <div class="city1"></div>
+                                                        </div>
+                                                        <div>
+                                                            <table class="table" id="">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col">DAY</th>
+                                                                        <th scope="col">TEMP</th>
+                                                                        <th scope="col">MAX-TEMP</th>
+                                                                        <th scope="col">MIN-TEMP</th>
+                                                                        <th scope="col">RAIN</th>
+                                                                        <!-- <th class="clearsky" scope="col">RAIN</th> -->
+                                                                        
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody id="forecast">
+                                                                    
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <br> 
+                                                    
+                                                    
+                                                    
+                                                    <div class="card" style="width: 100%;color:black">
+                                                            <div class="card-header">
+                                                                List of trails
+                                                            </div>
+                                                            <div>
+                                                                <table class="table" id="flytTable">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="name" scope="col">NAME</th>
+                                                                            <th class="address" scope="col">ADDRESS</th>
+                                                                            <th class="distance" scope="col">DISTANCE</th>
+                                                                            <th class="rating" scope="col">RATING</th>
+                                                                            <th class="img" scope="col"></th>
+                                                                            
+                                                                        </tr>
+                                                                    </thead>
+                            <tbody id="trailmix">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br> 
+                
+                
+                <section ><h1 class="simple">Trail Mix</h1></section>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                                <iframe width="1280" height="720" src="https://www.youtube.com/embed/fm0T7_SGee4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                            <!-- <img src="" class="d-block w-100" alt="..."> -->
+                          </div>
+                          <div class="carousel-item">
+                              <iframe width="1280" height="720" src="https://www.youtube.com/embed/ZeaIvjoH1FY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                          </div>
+                          <div class="carousel-item">
+                                <iframe width="1280" height="720" src="https://www.youtube.com/embed/ZeaIvjoH1FY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIbmWFTKZvx7_IcqVW9iSvh5g91vvdIvY&callback=initMap"
+         type="text/javascript"></script>
+         
+         
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+         
+         
+         
+         
+         
+         
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         </div>
-
-
-
-
-
-
-
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script src="./assets/javascript.js" async defer></script>
-    </body>
-</html>
+        </body>
+        </html>
+        
