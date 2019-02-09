@@ -1,13 +1,8 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 body {
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
     text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important; 
+    -webkit-font-smoothing: antialiased !important;    
 }
 
 li {
@@ -48,8 +43,8 @@ p {
     transition: all 300ms ease-in-out;
     font-weight: 500 !important;
     text-transform: uppercase;
-    background-color:  #f0941b !important;
-    border: 1px solid  #f0941b  !important;
+    background-color:  #62a86e !important;
+    border: 1px solid #a0c320  !important;
     color: white !important;
 }
 
@@ -118,8 +113,7 @@ p {
         background-image: url(../images/placeholder.jpg);
         background-position: left;
         background-repeat: no-repeat;
-        background-size: cover;
-        
+        background-size: cover; 
     }
 
     .header img {
@@ -174,9 +168,9 @@ p {
 
 /* TRAILS SECTION */
 .trails {
-    padding: 50px 0 80px;
+    padding: 80px 0 80px 0;
     text-align: center;
-    background-color: #63914e;
+    background-color:#62a86e;
 }
 
 .trails h2 {
@@ -204,8 +198,8 @@ p {
 
 .trailapi h4 {
     font-family: 'Roboto Slab', serif;
-    color:  #397a44;
-    font-size: 50px;
+    color: #a0c320;
+    font-size: 40px;
     text-align: center;
     padding-top: 20px;
 }
@@ -244,16 +238,20 @@ p {
     background-color: white;
 }
 
-.team b,
-.team h2,
-.team h4 {
+.team h2 {
     margin: 20px 0 px 20px;
-    color: #4c4c4c;
+    color: #a0c320;
+    font-size: 60px;
 }
 
-.team p {
-    color: #737373; 
+
+.team h4 {
+    margin: 20px 0 px 20px;
+    color: #a0c320;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
 }
+
 
 .team img {
     height: 200px;
@@ -261,54 +259,58 @@ p {
     margin-top: 40px;
 }
 
-.team i {
-    height: 80px;
-    width: 80px;
-    font-size: 50px;
-    border-radius: 50%;
-    color: #65b370;
-}
 
-.team a:hover i {
-    color: #e0a332;
-}
 
-/* CLIENTS SECTION */
+/* SAFETY SECTION */
 
-.clients {
-    padding: 50px 0 80px;
+.safety {
+    padding-top: 50px;
+    padding-bottom: 100px;
     background-image: url(../images/birdseye.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
+    color: rgb(0, 0, 0);
     
 }
 
 
-.clients h2,
-.clients p {
+.safety h2,
+.safety p {
     color: white;
     text-align: center;
+    font-size: 50px;
+    padding: 20px 0px 50px 0;
+
 }
 
-
-table, th, td {
-    border: 2px solid white;
+.safety table {
+    border: 2px solid #a0c320;
     border-collapse: collapse;
     text-align: center;
-  }
-  th {
-    padding: 5px;
-    text-align: center;
-    color: rgb(138, 216, 142);
-    font-size: 30px;
+    background-color: white;
   }
 
-  td {
-    padding: 30px;
+.safety th {
+    padding: 5px;
     text-align: center;
+    color:#a0c320;
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    border: 1px solid black;
+  }
+
+ .safety td {
+    padding: 10px 20px 10px 20px;
+    font-family: 'Roboto Slab', serif;
+    text-align: cen;
     font-size: 14px;
+    border: 1px solid black;
+  }
+
+  table img {
+      height: 20%;
+      width: auto;
   }
 
 /* CONTACT FORM  */
@@ -316,6 +318,10 @@ table, th, td {
 .contact {
     padding: 50px 0 80px;
     text-align: center;
+    background-image: url(../images/clouds.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .contact p {
@@ -324,8 +330,9 @@ table, th, td {
 }
 
 .contact h2 {
-    color: #4c4c4c;
-    margin: 20px 0 20px;
+    color: #ffffff;
+    font-size: 50px !important;
+    padding: 10px 0 10px 0;
 }
 
 .contact .input-group{
@@ -344,7 +351,7 @@ table, th, td {
     border-radius: 0;
     width: 100%;
     font-size: 15px;
-    background-color: #f08080;
+    background-color: #a0c320;
     color: white;
 }
 
@@ -353,23 +360,31 @@ table, th, td {
     color: white !important;
 }
 
+
 /* FOOTER */
 
 .footer {
-    padding: 30px;
-    color: #cccccc;
-    background-color: #65b370;
-}
-
-/* SOCIAL MEDIA ICONS */
-
-.footer .social {
-    font-size: 20px;
-    height: 30px;
-    width: 30px;
+    padding-top: 5px;
+    color: #ffffff;
+    background-color: #62a86e;
     text-align: center;
-    padding: 5px;
-    border: 1 px solid #ccc;
-    margin-bottom: 10px;
-    margin-right: 5px;
 }
+
+ img {
+    height:200px;
+    width: auto;
+} 
+ 
+  #map {
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom: 400px;
+  }
+
+  .card-header th {
+    font-family: 'Roboto Slab', serif;
+    color: #397a44;
+    font-size: 20px;
+    padding: 20px;
+  }
+

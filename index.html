@@ -1,17 +1,19 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- LINKED STYLESHEETS -->
+  <!-- LINKED STYLESHEETS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="fontawesome-free-5.7.1-web/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./css/slick-theme.css">
 
 
     <title>Trail Mix</title>
@@ -27,7 +29,6 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button> 
-              <!-- <a href="#" class="navbar-brand">Media</a> could add little logo here -->
           </div>
 
           <div class="navbar-collapse collapse">
@@ -35,9 +36,9 @@
               <li><a href="#header">home</a></li>
               <li><a href="#about">about</a></li>
               <li><a href="#trails">trails</a></li>
-              <li><a href="#team">weather</a></li>
-              <li><a href="#clients">gear</a></li>
-              <li><a href="#contact">team</a></li>
+              <li><a href="#safety">gear</a></li>
+              <li><a href="#team">team</a></li>
+              <li><a href="#contact">contact</a></li>
               </ul>
           </div>
       </div>
@@ -48,7 +49,7 @@
   <div id="header" class="header">
       <div class="container">
           <div class="row">
-              <div class="col-lg-6 col-md-3 wow fadeIn">
+              <div class="col-lg-6 col-md-3 wow bounceInLeft">
                   <img src="images/trail mix.png" alt="placeholder trail image">
                   <button class="btn btn-lg btn-success">JUST HIKE</button>
           </div>
@@ -75,118 +76,127 @@
   <!-- END ABOUT SECTION -->
 
   <!-- TRAILS API SECTION -->
+  <!-- MAP BEGINS HERE -->
   <div id="trails" class="trails">
       <div class="container">
           <div class="row">
               <div class="col-lg-7 col-med-7">
               <div class="trailapi">
-                  <img src="https://via.placeholder.com/500x500?text=TRAIL+MAP+HERE" alt="trail location map">
+                  <div id="map"></div>
                   <h4>LOCATE MY TRAIL</h4>
-                  <b>DETAILS HERE</b>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore temporibus, dolores eos repudiandae, nihil quibusdam sed laudantium soluta neque ea, perferendis omnis accusantium. Nostrum eveniet vel perferendis laborum quidem nisi!</p>
-                  <hr>
               </div>
           </div>
+
+  <!-- DAILY WEATHER BEGINS HERE -->
           <div class="col-lg-5 col-med-5">
           <div class="trailapi">
-              <h4>TRAIL SPECS</h4>
-              <h1>SUBHEAD HERE</h1>
+              <h4>DAILY FORECAST</h4>
               <hr>
-              <p>Put in some information here about what the API is doing...a little snipptet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore temporibus, dolores eos repudiandae, nihil quibusdam sed laudantium soluta neque ea, perferendis omnis accusantium. Nostrum eveniet</p>
-              <li>Data entry here</li>
-              <li>Data entry here</li>
-              <li>Data entry here</li>
-              <li>Data entry here</li>
-              <li>Data entry here</li>
-              <li>Data entry here</li>
-              <hr>
-              <button class="btn btn-success">Button here?</button>
+              <img src="images/weather.gif" alt="animated gif from animaticons">
+              <div class="city"></div>
+              <div class="wind"></div>
+              <div class="humidity"></div>
+              <div class="temp"></div>
+              <div class="shortestPath"></div>
             </div>
           </div>
       </div>
   </div>
   </div>
   </div>
-  
-  
-  <!-- END TRAILS API
+  <!-- END OF DAILY WEATHER -->
 
-  <!-- TEAM SECTION -->
-  <div id="team" class="team">
-      <div class="container">
-          <div class="row">
-              <h2>Meet the team</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, debitis alias ullam est, laborum nihil aliquid voluptate eligendi praesentium, ea ad beatae aliquam voluptatem optio facilis quam assumenda eos recusandae.</p>
-              <div class="col-lg-4 col-md-4">
-                  <img src="images/jp.png" alt="jp image">
-                  <h4>Jonathan Patino</h4>
-                  <b>POSTION HERE</b>
-                  <p>Here is a brief description about our team member</p>
-                  <a href="#"><i class="fab fa-github-square"></i></a>
-              </div>
-              
-              <div class="col-lg-4 col-md-4">
-                    <img src="images/david.png" alt="jp image">
-                    <h4>David Dumas</h4>
-                    <b>POSTION HERE</b>
-                    <p>Here is a brief description about our team member</p>
-                    <a href="#"><i class="fab fa-github-square"></i></a>
-              </div>
+ <!-- START WEEKLY FORECAST -->
+ <!-- <div id="about" class="about">
+        <div class="row"> -->
+        <!-- <div class="col-lg-12 col-md-12">
+            <div class ="forecast">
+                <table class="table" id="">
+                    <thead>
+                    <tr>
+                    <th scope="col">DAY</th>
+                    <th scope="col">TEMP</th>
+                    <th scope="col">MAX-TEMP</th>
+                    <th scope="col">MIN-TEMP</th>
+                    <th scope="col">RAIN</th>
+                    </tr>
+                    </thead>
+                    <tbody id="forecast">   
+                    </tbody>
+                </table>
+            </div> 
+            </div>
+            </div>
+         <br> 
+    </div>
+</div> -->
+<!-- END WEEKLY FORECAST -->  
 
-                <div class="col-lg-4 col-md-4">
-                    <img src="images/rachel.png" alt="jp image">
-                    <h4>Rachel Hollister</h4>
-                    <b>POSTION HERE</b>
-                    <p>Here is a brief description about our team member</p>
-                    <a href="#"><i class="fab fa-github-square"></i></a>
+  <!-- BEGINNING OF TRAIL INFORMATION -->
+                <div id="card-header" class="card-header">
+                <div class="container">
+                <div class="row">
+                <div class="col-lg-12 col-md-12">
+                <h1>List of trails</h1>
+                <table class="table" id="flytTable">
+                        <thead>
+                            <tr>
+                                <th class="name" scope="col">NAME</th>
+                                <th class="address" scope="col">ADDRESS</th>
+                                <th class="distance" scope="col">DISTANCE</th>
+                                <th class="rating" scope="col">RATING</th>
+                                <th class="img" scope="col"></th>   
+                            </tr>
+                        </thead>
+                    <tbody id="trailmix">
+                    </tbody>
+                </table>
                 </div>
-          </div>
-      </div>
-  </div>
-  </div>
-  <!-- END OF TEAM SECTION -->
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- END OF JP TRAIL INFORMATION -->
 
- <!-- TABLE SECTION -->
-  <div id="clients" class="clients">
+
+ <!-- SAFETY & GEAR SECTION -->
+  <div id="safety" class="safety">
       <div class="container">
           <div class="row">
-              <h2>Trusted By</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur voluptatum est recusandae ipsam adipisci nobis ut dicta, amet iure neque odio eum voluptatibus dolorum dolore ducimus earum explicabo repellendus? Dolorem.</p>
               <div class="col-lg-12 col-md-12">
-              <h2>We've got your back.</h2>
-              <p>Some simple safety tips and gear to pack.</p>
+              <h2>GEAR TO PACK & SAFETY TIPS</h2>
               <table style="width:100%">
                 <tr>
                 <th>GEAR</th>
                 <th>SAFETY</th> 
                 </tr>
                 <tr>
-                <td>gear here</td>
-                <td>safety here</td>
+                <td>Weather appropriate clothes</td>
+                <td>Pay attention to the trail</td>
                 </tr>
                 <tr>
-                <td>gear here</td>
-                <td>safety here</td>
+                <td>Hiking shoes</td>
+                <td>Take extra precautions around water</td>
                 </tr>
                 <tr>
-                <td>gear here</td>
-                <td>safety here</td>
+                <td>Plenty of food & water</td>
+                <td>Look back so you don't get lost</td>
                 </tr>
                 <tr>
-                <td>gear here</td>
-                <td>safety here</td>
+                <td>Navigation tools or a map</td>
+                <td>Carry mapping tools</td>
                 </tr>
                 <tr>
-                <td>gear here</td>
-                <td>safety here</td>
+                <td>First aid kit</td>
+                <td>Always wear sunscreen</td>
                 </tr>
                 <tr>
-                <td>gear here</td>
-                <td>safety here</td>
+                <td>A knife or multi-tool</td>
+                <td>Stay in sight</td>
                 </tr>
                 <tr>
-                <td>gear here</td>
-                <td>safety here</td>
+                <td>Headlamp</td>
+                <td>Stay hydrated</td>
                 </tr>
                 </table>    
               </div>    
@@ -194,128 +204,103 @@
           </div>
       </div>
   </div>
+<!-- END SAFETY & GEAR SECTION -->
 
-  <!-- END TABLE SECTION -->
-  
+  <!-- TEAM SECTION -->
+  <div id="team" class="team">
+    <div class="container">
+        <div class="row">
+            <h2>Meet the team</h2>
+            <div class="col-lg-4 col-md-4">
+                <img id="fooMeme" src="images/jp.png" alt="jp image" data-target="#fooModal">
+                <h4>Jonathan Patino</h4>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+                  <img id="davidMeme" src="images/david.png" alt="jp image">
+                  <h4>David Dumas</h4>
+            </div>
+
+              <div class="col-lg-4 col-md-4">
+                  <img id="rachelMeme" src="images/rachel.png" alt="jp image">
+                  <h4>Rachel Hollister</h4>
+              </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- END OF TEAM SECTION -->
+
+<!-- DAVID COMMENT CARD SECTION -->
+<div class="card text-center">
+    <div class="card-body">
+        <div class="single-item"></div>
+    </div>
+</div>
+<!-- DAVID END OF COMMENT CARD SECTION -->
+
   <!-- CONTACT SECTION -->
   <div id="contact" class="contact">
       <div class="container">
           <div class="row">
-              <h2>Contact</h2>
-              <p>blah blha blasdusanfsfksdf sdfsf sfsfgergre ffsfs sfsf cdc dfsfsfs!!</p>
+              <h2>Leave us a review</h2>
               <div class="col-lg-6 col-md-6">
                   <div class="input-group input-group-lg">
                   <span class="input-group-addon" id="sizing-addon1"><i class="far fa-user"></i></span>
-                  <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Full Name">
+                  <input id="userName" type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Full Name">
                   </div>
                   <div class="input-group input-group-lg">
                   <span class="input-group-addon" id="sizing-addon1"><i class="far fa-envelope"></i></span>
-                  <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Email Address">
+                  <input id="userEmail" type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Email Address">
                   </div>
                   <div class="input-group input-group-lg">
                  <span class="input-group-addon" id="sizing-addon1"><i class="fas fa-phone"></i></span>
-                 <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Phone Number">
+                 <input id="userPhone" type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Phone Number">
                   </div>
               </div>
               <div class="col-lg-6 col-md-6">
                   <div class="input-group">
-                      <textarea name="" id="" cols="80" rows="6" class="form-control"></textarea>
+                      <textarea name="" id="userComment" cols="80" rows="6" class="form-control"></textarea>
                   </div>
-                  <button class="btn btn-lg">Submit Your Message</button>
+                  <button id="commentSubmit" class="btn btn-lg">Submit Your Message</button>
               </div>
           </div>
       </div>
   </div>
-  <!-- END OF CONTACT FORM -->
 
-  <!-- FOOTER -->
+<!-- FOOTER BEGINS HERE -->
   <div id="footer" class="footer">
       <div class="container">
           <div class="row">
-            <div class="col-lg-4 col-md-4">
-                  <h4>Contact Us</h4>
-                  <p><i class="fas fa-home"></i> 1995 University Ave, Berkeley, CA 94704</p>
-                  <p><i class="far fa-envelope"></i> support@trailmix.com</p>
-                  <p><i class="fas fa-phone"></i> +1(510)867-5309</p>
+            <div class="col-lg-12 col-md-12">
+                  <p><i class="fas fa-home"></i> 1995 University Ave, Berkeley, CA 94704     -     <i class="far fa-envelope"></i> support@trailmix.com     -     <i class="fas fa-phone"></i> +1(510)867-5309</p>
             </div>
-            <div class="col-lg-4 col-md-4">
-              <h4>About</h4>
-              <p><i class="far fa-square"></i> blah</p>
-              <p><i class="far fa-square"></i> blah</p>
-              <p><i class="far fa-square"></i> blah</p>
-            </div>
-           
-            <div class="col-lg-4 col-md-4">
-              <h4>Stay in touch</h4>
-              <p><i class="social fab fa-facebook-square"></i></p>
-              <p><i class="social fab fa-twitter-square"></i></p>
-              <p><i class="social fab fa-instagram"></i></p>
-            </div>
-              </div>
           </div>
       </div>
   </div>
-
+  <!-- FOOTER ENDS HERE -->
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIbmWFTKZvx7_IcqVW9iSvh5g91vvdIvY&callback=initMap"
+    type="text/javascript"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" async defer></script>       
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script src="js/wow.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+   <script src="assets/javascript/app.js" async defer></script>  
+
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+   <script src="./js/javascript.js" async defer></script>   
+
+    
     <script>
-    //wow.js here in script
     new WOW().init();
-
-    //form to trail mix email goes here
-     //update this with your $form selector
-     var form_id = "jquery_form";
-
-var data = {
-    "access_token": "kx0jm9aj7f0gwmu2vhjur1pr"
-};
-
-function onSuccess() {
-    // remove this to avoid redirect
-    window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
-}
-
-function onError(error) {
-    // remove this to avoid redirect
-    window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
-}
-
-var sendButton = $("#" + form_id + " [name='send']");
-
-function send() {
-    sendButton.val('Sending…');
-    sendButton.prop('disabled',true);
-
-    var subject = $("#" + form_id + " [name='subject']").val();
-    var message = $("#" + form_id + " [name='text']").val();
-    data['subject'] = subject;
-    data['text'] = message;
-
-    $.post('https://postmail.invotes.com/send',
-        data,
-        onSuccess
-    ).fail(onError);
-
-    return false;
-}
-
-sendButton.on('click', send);
-
-var $form = $("#" + form_id);
-$form.submit(function( event ) {
-    event.preventDefault();
-});
-// end of form to trail mix email
-
-
-
-
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
   </body>
   </html>
+
